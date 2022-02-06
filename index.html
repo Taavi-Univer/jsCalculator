@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="displayField">
+        <div class="acc" id="acc"></div>
+        <div class="sum" id="sum"></div>
+     </div>
+      <div class="number seven" onclick="NewNumber(7)" id="seven">7</div>
+      <div class="number eight" onclick="NewNumber(8)" id="eight">8</div>
+      <div class="number nine" onclick="NewNumber(9)" id="nine"=>9</div>
+      <div class="number four" onclick="NewNumber(4)" id="four"=>4</div>
+      <div class="number five" onclick="NewNumber(5)" id="five"=>5</div>
+      <div class="number six" onclick="NewNumber(6)" id="six"=>6</div>
+      <div class="number one" onclick="NewNumber(1)" id="one"=>1</div>
+      <div class="number two" onclick="NewNumber(2)" id="two"=>2</div>
+      <div class="number three" onclick="NewNumber(3)" id="three"=>3</div>
+      <div class="number zero" onclick="NewNumber(0)" id="zero"=>0</div>
+      <div class="comma">
+        <div class="operation com" onclick="Comma()"  id="com">.</div>
+        <div class="operation reset" onclick="Reset()" id="reset">C</div>
+      </div>
+      <div class="operation equals" onclick="Result()" id="equals">=</div>
+      <div class="operation divide" onclick="Calculate('/')" id="divide">/</div>
+      <div class="operation multiply" onclick="Calculate('x')" id="multiply">x</div>
+      <div class="operation minus" onclick="Calculate('-')" id="minus">-</div>
+      <div class="operation plus" onclick="Calculate('+')" id="plus">+</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+<!-- &equals; -->
+<!-- &divide; -->
+<!-- &times; -->
+<!-- &minus; -->
+<!-- &plus; -->

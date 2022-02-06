@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #b5c8ca;
+  font-family: "Lato", sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+.app {
+  width: 400px;
+  height: 500px;
+  background-color: #1f1f1f;
+  padding: 5px;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "d d d d"
+    "sev e n div"
+    "f fi si mu"
+    "o t th mi"
+    "z co eq pl";
+}
+
+.displayField {
+  height: 120px;
+  grid-area: d;
+  color: white;
+  font-size: 3rem;
+  place-self: flex-end;
+  padding-right: 0.2em;
+}
+
+.acc {
+  font-size: 0.9rem;
+}
+
+.sum {
+  text-align: end;
+}
+
+.seven {
+  grid-area: sev;
+}
+
+.eight {
+  grid-area: e;
+}
+
+.nine {
+  grid-area: n;
+}
+
+.divide {
+  grid-area: div;
+}
+
+.four {
+  grid-area: f;
+}
+
+.five {
+  grid-area: fi;
+}
+
+.six {
+  grid-area: si;
+}
+
+.multiply {
+  grid-area: mu;
+}
+
+.one {
+  grid-area: o;
+}
+
+.two {
+  grid-area: t;
+}
+
+.three {
+  grid-area: th;
+}
+
+.minus {
+  grid-area: mi;
+}
+
+.zero {
+  grid-area: z;
+}
+
+.equals {
+  grid-area: eq;
+}
+
+.plus {
+  grid-area: pl;
+}
+
+.comma {
+  grid-area: co;
+}
+
+.com,
+.reset {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.com {
+  border-bottom: 2px solid #1f1f1f;
+}
+
+.reset {
+  padding-top: 3px;
+}
+
+.com:hover,
+.reset:hover,
+.com:focus,
+.reset:focus {
+  background-color: #31302f;
+}
+
+.number,
+.operation {
+  background-color: #060606;
+  color: #dbdbdb;
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.operation {
+  background-color: #131313;
+}
+
+.number:hover,
+.operation:hover,
+.number:focus,
+.operation:focus {
+  background-color: #31302f;
+}
+
+.equals {
+  background-color: #31302f;
+}
+
+.equals:hover,
+.equals:focus {
+  background-color: #504d4a;
+}
